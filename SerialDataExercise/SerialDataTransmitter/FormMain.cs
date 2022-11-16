@@ -1,4 +1,4 @@
-﻿using SerialDataBase;
+using SerialDataBase;
 using System;
 using System.Windows.Forms;
 
@@ -27,24 +27,27 @@ namespace SerialDataTransmitter
                     Console.WriteLine("");
 
                     byte[] packet = new byte[SerialPortAccessLayer.PACKET_SIZE];
-                    int index = 0;
- 
+                    
                     // Status flags
-                    packet[index++] = 0xad;
+                    packet[0] = 0xad;
 
                     // Little-endian encoded signed 16-bit temperature in degrees C
-                    packet[index++] = 0xfe;
-                    packet[index++] = 0xff;
+                    packet[1] = 0xfe;
+                    packet[2] = 0xff;
 
                     // Single-precision 32-bit floating-point DC voltage
-                    Buffer.BlockCopy(BitConverter.GetBytes(13.2f), 0, packet, index++, 4);
+                    byte[] voltBytes = BitConverter.GetBytes(13.2f);
+                    
+                    Array.Copy(voltBytes, 0, packet, 3, voltBytes.Length);
 
                     // Two-digit decimal major firmware version,
                     // two-digit decimal minor firmware version,
                     // ASCI alphatical release candidate version
-                    packet[index++] = 0x02;
-                    packet[index++] = 0x05;
-                    packet[index++] = 0x63;
+                    packet[7] = 0x02;
+                    packet[8] = 0x05;
+                    packet[9] = 0x63;
+
+                    int index = 10;
 
                     // Null-terminated ASCII string message to the user
                     foreach (char character in "Hello, World!\0")
