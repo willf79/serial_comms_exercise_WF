@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialDataTransmitter", "SerialDataTransmitter\SerialDataTransmitter.csproj", "{49AF11A9-BBA3-48C6-A0E7-13C047511A90}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SerialDataBase", "SerialDataBase\SerialDataBase.shproj", "{20A64B3D-8644-45DE-9BD3-2D22610734B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialDataReceiver", "SerialDataReceiver\SerialDataReceiver.csproj", "{6ADA9C55-66FA-468B-9286-8EA38F65F73E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49AF11A9-BBA3-48C6-A0E7-13C047511A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AF11A9-BBA3-48C6-A0E7-13C047511A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AF11A9-BBA3-48C6-A0E7-13C047511A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AF11A9-BBA3-48C6-A0E7-13C047511A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADA9C55-66FA-468B-9286-8EA38F65F73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADA9C55-66FA-468B-9286-8EA38F65F73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADA9C55-66FA-468B-9286-8EA38F65F73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADA9C55-66FA-468B-9286-8EA38F65F73E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12AC2AAA-2A6E-4D9E-A397-3D75C07A8108}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SerialDataBase\SerialDataBase.projitems*{20a64b3d-8644-45de-9bd3-2d22610734b8}*SharedItemsImports = 13
+		SerialDataBase\SerialDataBase.projitems*{49af11a9-bba3-48c6-a0e7-13c047511a90}*SharedItemsImports = 4
+		SerialDataBase\SerialDataBase.projitems*{6ada9c55-66fa-468b-9286-8ea38f65f73e}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\bin\Debug\SerialDataTransmitter.exe.config
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\bin\Debug\SerialDataTransmitter.exe
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\bin\Debug\SerialDataTransmitter.pdb
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataReceiver.csproj.AssemblyReference.cache
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataReceiver.csproj.SuggestedBindingRedirects.cache
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataTransmitter.Properties.Resources.resources
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataReceiver.csproj.GenerateResource.cache
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataReceiver.csproj.CoreCompileInputs.cache
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataTransmitter.exe
+C:\Users\Willem\Documents\GitHub\serial_comms_exercise\SerialDataExercise\SerialDataReceiver\obj\Debug\SerialDataTransmitter.pdb

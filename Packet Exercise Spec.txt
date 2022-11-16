@@ -1,0 +1,11 @@
+All fields are big-endian encoded unless otherwise specified.
+
+Fields 1-8, Byte Offset 0: Bit flags 1-8.
+
+Field 9, Byte Offset 1-2: 16-bit signed integer ambient temperature in degrees C stored in little-endian order.
+
+Field 10, Byte Offset 3-6: 32-bit double-precision floating-point numeric voltage.
+
+Field 11, Byte Offset 7-9: 8-bit numeric major software version, 8-bit numeric minor software version, and an alphabetical release candidate ASCII character.
+
+Field 12, Byte Offset 10-23: 14-character null-terminated ASCII string including terminator.
