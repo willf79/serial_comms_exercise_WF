@@ -132,7 +132,6 @@ namespace SerialDataReceiver
                     byte maVersion = rPacket[7];
                     byte miVersion = rPacket[8];
                     
-                    //The alphabetical release candidate ASCII character is a lowercase L (hard to tell between 1 and l)
                     String releaseASCII = System.Text.Encoding.ASCII.GetString(rPacket, 9, 1);
 
                     //Combine versions into one

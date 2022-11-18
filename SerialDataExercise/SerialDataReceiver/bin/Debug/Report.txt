@@ -7,6 +7,6 @@ Field 6: Bit flag is True.
 Field 7: Bit flag is False.
 Field 8: Bit flag is True.
 Field 9: -2 degrees C
-Field 10: 5.47584076565989E-63 volts
-Field 11: Software version 72.101.l
+Field 10: 13.2 volts
+Field 11: Software version 2.5.c
 Field 12: Hello, World!
