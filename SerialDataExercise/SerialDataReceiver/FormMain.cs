@@ -1,4 +1,4 @@
-﻿using SerialDataBase;
+using SerialDataBase;
 using System;
 using System.Collections;
 using System.Drawing;
@@ -107,17 +107,19 @@ namespace SerialDataReceiver
                     //Field 10, Byte Offset 3 - 6: 32 - bit double-precision floating - point numeric voltage.
                     Console.WriteLine("Field 10:");
 
-                    byte[] voltPacket = new byte[8];
+                    //byte[] voltPacket = new byte[8];
+                    byte[] voltPacket = new byte[4];
                     Array.Copy(rPacket, 3, voltPacket, 0, 4);
                     
-                    if (endianness)
-                    {
-                        Array.Reverse(voltPacket);
-                    }
-                    
-                    var f10 = BitConverter.ToDouble(voltPacket, 0);
-                    
-                    Console.WriteLine(f10);
+                    //if (endianness)
+                    //{
+                        //Array.Reverse(voltPacket);
+                    //}
+
+                    //var f10 = BitConverter.ToDouble(voltPacket, 0);
+                    var f10 = BitConverter.ToSingle(voltPacket, 0);
+
+                    Console.WriteLine(f10.ToString());
                     output[9] = "Field 10: " + f10 + " volts";
 
 
@@ -146,8 +148,9 @@ namespace SerialDataReceiver
                     //Field 12, Byte Offset 10-23: 14-character null-terminated ASCII string including terminator.
                     Console.WriteLine("Field 12:");
 
-                    String messageASCII = System.Text.Encoding.ASCII.GetString(rPacket, 7, 13);
-                    
+                    //String messageASCII = System.Text.Encoding.ASCII.GetString(rPacket, 7, 13);
+                    String messageASCII = System.Text.Encoding.ASCII.GetString(rPacket, 10, 13);
+
                     Console.WriteLine(messageASCII);
                     output[11] = "Field 12: " + messageASCII;
 
